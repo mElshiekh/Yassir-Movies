@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CAC5198E79E194AB7CFCEF7 /* Pods_YassirApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36B4EE22391527C6612875E /* Pods_YassirApp.framework */; };
 		9CA500162AEADAA7001D8FD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA500152AEADAA7001D8FD1 /* AppDelegate.swift */; };
-		9CA500182AEADAA7001D8FD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA500172AEADAA7001D8FD1 /* SceneDelegate.swift */; };
-		9CA5001A2AEADAA7001D8FD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA500192AEADAA7001D8FD1 /* ViewController.swift */; };
-		9CA5001D2AEADAA7001D8FD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA5001B2AEADAA7001D8FD1 /* Main.storyboard */; };
 		9CA500202AEADAA7001D8FD1 /* YassirApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CA5001E2AEADAA7001D8FD1 /* YassirApp.xcdatamodeld */; };
 		9CA500222AEADAA9001D8FD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA500212AEADAA9001D8FD1 /* Assets.xcassets */; };
 		9CA500252AEADAA9001D8FD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA500232AEADAA9001D8FD1 /* LaunchScreen.storyboard */; };
 		9CA500302AEADAA9001D8FD1 /* YassirAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA5002F2AEADAA9001D8FD1 /* YassirAppTests.swift */; };
 		9CA5003A2AEADAA9001D8FD1 /* YassirAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA500392AEADAA9001D8FD1 /* YassirAppUITests.swift */; };
 		9CA5003C2AEADAA9001D8FD1 /* YassirAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA5003B2AEADAA9001D8FD1 /* YassirAppUITestsLaunchTests.swift */; };
+		9CA500512AEADD16001D8FD1 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA500502AEADD16001D8FD1 /* AppCoordinator.swift */; };
+		9CA500542AEADD9C001D8FD1 /* AppCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA500532AEADD9C001D8FD1 /* AppCoordinatorProtocol.swift */; };
+		9CA500572AEADDE9001D8FD1 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA500562AEADDE9001D8FD1 /* BaseCoordinator.swift */; };
+		9CA5005D2AEADE74001D8FD1 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA5005C2AEADE74001D8FD1 /* Action.swift */; };
+		CF4FCE8672F7974254F22B60 /* Pods_YassirApp_YassirAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB45BC65CF3212B73C51E600 /* Pods_YassirApp_YassirAppUITests.framework */; };
+		D0DDE7143FFC4364F2CF7F1D /* Pods_YassirAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F0461B46CB1528D629C1E0 /* Pods_YassirAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D7DA04651B4D87D01D9943B /* Pods-YassirApp-YassirAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YassirApp-YassirAppUITests.release.xcconfig"; path = "Target Support Files/Pods-YassirApp-YassirAppUITests/Pods-YassirApp-YassirAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4E9A2AFC973606D71FA6300F /* Pods-YassirApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YassirApp.debug.xcconfig"; path = "Target Support Files/Pods-YassirApp/Pods-YassirApp.debug.xcconfig"; sourceTree = "<group>"; };
+		6201907E39199870C65AA028 /* Pods-YassirAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YassirAppTests.release.xcconfig"; path = "Target Support Files/Pods-YassirAppTests/Pods-YassirAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		9CA500122AEADAA7001D8FD1 /* YassirApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YassirApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA500152AEADAA7001D8FD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9CA500172AEADAA7001D8FD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9CA500192AEADAA7001D8FD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9CA5001C2AEADAA7001D8FD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CA5001F2AEADAA7001D8FD1 /* YassirApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YassirApp.xcdatamodel; sourceTree = "<group>"; };
 		9CA500212AEADAA9001D8FD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CA500242AEADAA9001D8FD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +55,16 @@
 		9CA500352AEADAA9001D8FD1 /* YassirAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YassirAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA500392AEADAA9001D8FD1 /* YassirAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YassirAppUITests.swift; sourceTree = "<group>"; };
 		9CA5003B2AEADAA9001D8FD1 /* YassirAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YassirAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9CA500502AEADD16001D8FD1 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		9CA500532AEADD9C001D8FD1 /* AppCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		9CA500562AEADDE9001D8FD1 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		9CA5005C2AEADE74001D8FD1 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		A09F6FE242E9DEFE9568F7E5 /* Pods-YassirAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YassirAppTests.debug.xcconfig"; path = "Target Support Files/Pods-YassirAppTests/Pods-YassirAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB45BC65CF3212B73C51E600 /* Pods_YassirApp_YassirAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YassirApp_YassirAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B21EE8AD5A030DC9B12A4568 /* Pods-YassirApp-YassirAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YassirApp-YassirAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-YassirApp-YassirAppUITests/Pods-YassirApp-YassirAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B6F0461B46CB1528D629C1E0 /* Pods_YassirAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YassirAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C36B4EE22391527C6612875E /* Pods_YassirApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YassirApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4AD8678860B3269F5E17552 /* Pods-YassirApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YassirApp.release.xcconfig"; path = "Target Support Files/Pods-YassirApp/Pods-YassirApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CAC5198E79E194AB7CFCEF7 /* Pods_YassirApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0DDE7143FFC4364F2CF7F1D /* Pods_YassirAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +88,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF4FCE8672F7974254F22B60 /* Pods_YassirApp_YassirAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44650397EB30826ECE50F3C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C36B4EE22391527C6612875E /* Pods_YassirApp.framework */,
+				AB45BC65CF3212B73C51E600 /* Pods_YassirApp_YassirAppUITests.framework */,
+				B6F0461B46CB1528D629C1E0 /* Pods_YassirAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9CA500092AEADAA7001D8FD1 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +112,8 @@
 				9CA5002E2AEADAA9001D8FD1 /* YassirAppTests */,
 				9CA500382AEADAA9001D8FD1 /* YassirAppUITests */,
 				9CA500132AEADAA7001D8FD1 /* Products */,
+				C07395A1D5C083FF14861106 /* Pods */,
+				44650397EB30826ECE50F3C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +130,12 @@
 		9CA500142AEADAA7001D8FD1 /* YassirApp */ = {
 			isa = PBXGroup;
 			children = (
-				9CA500152AEADAA7001D8FD1 /* AppDelegate.swift */,
-				9CA500172AEADAA7001D8FD1 /* SceneDelegate.swift */,
-				9CA500192AEADAA7001D8FD1 /* ViewController.swift */,
-				9CA5001B2AEADAA7001D8FD1 /* Main.storyboard */,
+				9CA5004D2AEADBA2001D8FD1 /* Presentation */,
+				9CA5004C2AEADB99001D8FD1 /* Data */,
+				9CA5004B2AEADB91001D8FD1 /* Domain */,
+				9CA5004A2AEADB7E001D8FD1 /* Utils */,
+				9CA500492AEADB5A001D8FD1 /* Application */,
+				9CA500482AEADB42001D8FD1 /* Resources */,
 				9CA500212AEADAA9001D8FD1 /* Assets.xcassets */,
 				9CA500232AEADAA9001D8FD1 /* LaunchScreen.storyboard */,
 				9CA500262AEADAA9001D8FD1 /* Info.plist */,
@@ -130,6 +161,115 @@
 			path = YassirAppUITests;
 			sourceTree = "<group>";
 		};
+		9CA500482AEADB42001D8FD1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9CA500492AEADB5A001D8FD1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9CA500552AEADDCB001D8FD1 /* Models */,
+				9CA500522AEADD65001D8FD1 /* AppCoordinator */,
+				9CA500152AEADAA7001D8FD1 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9CA5004A2AEADB7E001D8FD1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9CA5004E2AEADBCD001D8FD1 /* Network */,
+				9CA5005A2AEADE4F001D8FD1 /* Common */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9CA5004B2AEADB91001D8FD1 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		9CA5004C2AEADB99001D8FD1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9CA5004D2AEADBA2001D8FD1 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		9CA5004E2AEADBCD001D8FD1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9CA5004F2AEADBD8001D8FD1 /* Models */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9CA5004F2AEADBD8001D8FD1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9CA500522AEADD65001D8FD1 /* AppCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9CA500502AEADD16001D8FD1 /* AppCoordinator.swift */,
+				9CA500532AEADD9C001D8FD1 /* AppCoordinatorProtocol.swift */,
+			);
+			path = AppCoordinator;
+			sourceTree = "<group>";
+		};
+		9CA500552AEADDCB001D8FD1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9CA500562AEADDE9001D8FD1 /* BaseCoordinator.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9CA5005A2AEADE4F001D8FD1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9CA5005B2AEADE62001D8FD1 /* Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9CA5005B2AEADE62001D8FD1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9CA5005C2AEADE74001D8FD1 /* Action.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C07395A1D5C083FF14861106 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E9A2AFC973606D71FA6300F /* Pods-YassirApp.debug.xcconfig */,
+				F4AD8678860B3269F5E17552 /* Pods-YassirApp.release.xcconfig */,
+				B21EE8AD5A030DC9B12A4568 /* Pods-YassirApp-YassirAppUITests.debug.xcconfig */,
+				4D7DA04651B4D87D01D9943B /* Pods-YassirApp-YassirAppUITests.release.xcconfig */,
+				A09F6FE242E9DEFE9568F7E5 /* Pods-YassirAppTests.debug.xcconfig */,
+				6201907E39199870C65AA028 /* Pods-YassirAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +277,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CA5003F2AEADAA9001D8FD1 /* Build configuration list for PBXNativeTarget "YassirApp" */;
 			buildPhases = (
+				2D91B6FA3F186EF09EF6D3E7 /* [CP] Check Pods Manifest.lock */,
 				9CA5000E2AEADAA7001D8FD1 /* Sources */,
 				9CA5000F2AEADAA7001D8FD1 /* Frameworks */,
 				9CA500102AEADAA7001D8FD1 /* Resources */,
@@ -154,6 +295,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CA500422AEADAA9001D8FD1 /* Build configuration list for PBXNativeTarget "YassirAppTests" */;
 			buildPhases = (
+				FEF55740962E80C5C2162D50 /* [CP] Check Pods Manifest.lock */,
 				9CA500272AEADAA9001D8FD1 /* Sources */,
 				9CA500282AEADAA9001D8FD1 /* Frameworks */,
 				9CA500292AEADAA9001D8FD1 /* Resources */,
@@ -172,6 +314,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CA500452AEADAA9001D8FD1 /* Build configuration list for PBXNativeTarget "YassirAppUITests" */;
 			buildPhases = (
+				9B32911D2A7651470174C7D0 /* [CP] Check Pods Manifest.lock */,
 				9CA500312AEADAA9001D8FD1 /* Sources */,
 				9CA500322AEADAA9001D8FD1 /* Frameworks */,
 				9CA500332AEADAA9001D8FD1 /* Resources */,
@@ -236,7 +379,6 @@
 			files = (
 				9CA500252AEADAA9001D8FD1 /* LaunchScreen.storyboard in Resources */,
 				9CA500222AEADAA9001D8FD1 /* Assets.xcassets in Resources */,
-				9CA5001D2AEADAA7001D8FD1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,15 +398,86 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2D91B6FA3F186EF09EF6D3E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YassirApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B32911D2A7651470174C7D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YassirApp-YassirAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEF55740962E80C5C2162D50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YassirAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9CA5000E2AEADAA7001D8FD1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CA5001A2AEADAA7001D8FD1 /* ViewController.swift in Sources */,
+				9CA500572AEADDE9001D8FD1 /* BaseCoordinator.swift in Sources */,
+				9CA5005D2AEADE74001D8FD1 /* Action.swift in Sources */,
+				9CA500512AEADD16001D8FD1 /* AppCoordinator.swift in Sources */,
 				9CA500162AEADAA7001D8FD1 /* AppDelegate.swift in Sources */,
+				9CA500542AEADD9C001D8FD1 /* AppCoordinatorProtocol.swift in Sources */,
 				9CA500202AEADAA7001D8FD1 /* YassirApp.xcdatamodeld in Sources */,
-				9CA500182AEADAA7001D8FD1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +514,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9CA5001B2AEADAA7001D8FD1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9CA5001C2AEADAA7001D8FD1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9CA500232AEADAA9001D8FD1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -436,6 +641,7 @@
 		};
 		9CA500402AEADAA9001D8FD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E9A2AFC973606D71FA6300F /* Pods-YassirApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -463,6 +669,7 @@
 		};
 		9CA500412AEADAA9001D8FD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4AD8678860B3269F5E17552 /* Pods-YassirApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +697,7 @@
 		};
 		9CA500432AEADAA9001D8FD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A09F6FE242E9DEFE9568F7E5 /* Pods-YassirAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -509,6 +717,7 @@
 		};
 		9CA500442AEADAA9001D8FD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6201907E39199870C65AA028 /* Pods-YassirAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +737,7 @@
 		};
 		9CA500462AEADAA9001D8FD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B21EE8AD5A030DC9B12A4568 /* Pods-YassirApp-YassirAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -545,6 +755,7 @@
 		};
 		9CA500472AEADAA9001D8FD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D7DA04651B4D87D01D9943B /* Pods-YassirApp-YassirAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
