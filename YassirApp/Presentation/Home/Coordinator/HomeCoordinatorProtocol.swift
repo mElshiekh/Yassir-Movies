@@ -16,5 +16,5 @@ protocol HomeCoordinatorProtocol: BaseCoordinator {
     var controller: HomeViewControllerProtocol? { get set }
     var navigationController: UINavigationController? { get set }
     var callBack: PassthroughSubject<HomeCoordinatorCallback, Never>? { get set }
-    
+    func goToDetailsScreen(id: Int)
 }

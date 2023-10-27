@@ -30,4 +30,11 @@ class HomeViewModel: HomeViewModelProtocol {
     func loadMore() {
         fetchMoviesUseCase.execute()
     }
+
+    func getIDFor(index: Int) -> Int? {
+        guard (moviesObserver.value?.count ?? 0) > index
+        else { return nil }
+
+        return moviesObserver.value?[index].id
+    }
 }

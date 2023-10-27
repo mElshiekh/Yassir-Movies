@@ -8,6 +8,8 @@
 
 import Foundation
 
+// MARK: - MoviesResponseDTO
+
 struct MoviesResponseDTO: Codable {
     let page: Int
     let results: [MovieResponseDTO]
@@ -20,10 +22,11 @@ struct MoviesResponseDTO: Codable {
     }
 }
 
+// MARK: - MovieResponseDTO
+
 struct MovieResponseDTO: Codable {
     let adult: Bool?
     let backdropPath: String?
-    let genreIDS: [Int]?
     let id: Int?
     let originalLanguage, originalTitle, overview: String?
     let popularity: Double?
@@ -31,11 +34,11 @@ struct MovieResponseDTO: Codable {
     let video: Bool?
     let voteAverage: Double?
     let voteCount: Int?
+    let genres: [Genre]?
 
     enum CodingKeys: String, CodingKey {
         case adult
         case backdropPath = "backdrop_path"
-        case genreIDS = "genre_ids"
         case id
         case originalLanguage = "original_language"
         case originalTitle = "original_title"
@@ -45,8 +48,18 @@ struct MovieResponseDTO: Codable {
         case title, video
         case voteAverage = "vote_average"
         case voteCount = "vote_count"
+        case genres
     }
 }
+
+// MARK: - Genre
+
+struct Genre: Codable {
+    let id: Int
+    let name: String
+}
+
+// MARK: - MovieResponseDTO Mapping
 
 extension MovieResponseDTO: Mapper {
     func toDomain() -> Movie {
@@ -59,8 +72,24 @@ extension MovieResponseDTO: Mapper {
                           poster: poster,
                           title: title,
                           releaseDate: releaseDate,
-                          rating: voteAverage,
-                          overview: overview)
+                          rating: voteAverage)
+        return movie
+    }
+
+    func toDetailsDomain() -> MovieDetails {
+        var poster: String?
+        if let posterPath = posterPath {
+            poster = StaticDataManager.shared.imageBaseURL + posterPath
+        }
+        let releaseDate = Date(from: self.releaseDate)
+        let genresArr = genres?.compactMap({ $0.name }).joined(separator: " ,")
+        let movie = MovieDetails(id: id,
+                                 poster: poster,
+                                 title: title,
+                                 releaseDate: releaseDate,
+                                 rating: voteAverage,
+                                 overview: overview,
+                                 genres: genresArr)
         return movie
     }
 }

@@ -26,20 +26,20 @@ class HomeCoordinator: BaseCoordinator, HomeCoordinatorProtocol {
         return controller
     }
 
-//
-//    func goToScreen() {
-//        let coordinator = screenCoordinator()
-//        let callBack = PassthroughSubject<ScreenCoordinatorCallback, Never>()
-//        callBack.sink(receiveValue: { value in
-//                switch value {
-//                case .closed:
-//                    break
-//                }
-//        }).store(in: &cancellables)
-//        let controller = coordinator.start(model: ScreenCoordinatorModel(navigationController: navigationController),
-//                                           callBack: callBack)
-//        navigationController?.pushViewController(controller, animated: true)
-//    }
+    func goToDetailsScreen(id: Int) {
+        let coordinator = MovieDetailsCoordinator()
+        let callBack = PassthroughSubject<MovieDetailsCoordinatorCallback, Never>()
+        callBack.sink(receiveValue: { value in
+            switch value {
+            case .closed:
+                break
+            }
+        }).store(in: &cancellables)
+        let controller = coordinator.start(model: MovieDetailsDependencies(navigationController: navigationController,
+                                     id: id),
+                                           callBack: callBack)
+        navigationController?.pushViewController(controller, animated: true)
+    }
 
     deinit {
         callBack?.send(.closed)

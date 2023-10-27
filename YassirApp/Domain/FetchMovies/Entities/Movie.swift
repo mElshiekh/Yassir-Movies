@@ -7,15 +7,27 @@
 
 import Foundation
 
-struct Movie {
+class Movie {
     var id: Int?
     var poster: String?
     var title: String?
     var releaseDate: Date?
     var rating: Double?
-    var overview: String?
-    
+
+    init(id: Int? = nil,
+         poster: String? = nil,
+         title: String? = nil,
+         releaseDate: Date? = nil,
+         rating: Double? = nil) {
+        self.id = id
+        self.poster = poster
+        self.title = title
+        self.releaseDate = releaseDate
+        self.rating = rating
+    }
+
     var releaseYear: String {
         releaseDate?.getDateString(format: .year) ?? "N/A"
     }
+    
 }

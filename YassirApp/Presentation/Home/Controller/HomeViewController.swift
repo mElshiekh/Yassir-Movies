@@ -58,6 +58,8 @@ extension HomeViewController: MoviesListTableViewDatasourceDelegate {
     }
     
     func didSelectItem(at index: Int) {
-        print(index)
+        if let id = viewModel?.getIDFor(index: index) {
+            coordinator?.goToDetailsScreen(id: id)
+        }
     }
 }

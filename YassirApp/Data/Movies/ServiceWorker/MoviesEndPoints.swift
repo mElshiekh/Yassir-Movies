@@ -8,18 +8,23 @@
 
 import Alamofire
 
-enum MoviesEndpoints: String, Endpoints {
-    case request
+enum MoviesEndpoints: Endpoints {
+    case discover
+    case details(id: String)
 
     func getMethod() -> HTTPMethod {
         switch self {
-        case .request: return .get
+        case .discover: return .get
+        case .details: return .get
         }
     }
 
     func getValue() -> String {
         switch self {
-        case .request: return "discover/movie"
+        case .discover:
+            return "discover/movie"
+        case .details(id: let id):
+            return "movie/\(id)"
         }
     }
 }

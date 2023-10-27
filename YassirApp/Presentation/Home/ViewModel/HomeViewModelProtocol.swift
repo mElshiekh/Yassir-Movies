@@ -15,4 +15,5 @@ protocol HomeViewModelProtocol: AnyObject {
     var networkErrorObserver: PassthroughSubject<String, Never> { get set }
     func retrieveData()
     func loadMore()
+    func getIDFor(index: Int) -> Int?
 }
