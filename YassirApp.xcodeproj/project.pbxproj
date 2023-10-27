@@ -66,6 +66,8 @@
 		9CD19D222AEC35BC001E0488 /* MovieDetailsViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD19D182AEC35BC001E0488 /* MovieDetailsViewControllerProtocol.swift */; };
 		9CD19D232AEC35BC001E0488 /* MovieDetailsDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD19D1A2AEC35BC001E0488 /* MovieDetailsDependencies.swift */; };
 		9CD19D242AEC35BC001E0488 /* MovieDetailsCallBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD19D1B2AEC35BC001E0488 /* MovieDetailsCallBack.swift */; };
+		9CD19D262AEC412C001E0488 /* FetchMovieDetailsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD19D252AEC412C001E0488 /* FetchMovieDetailsUseCaseTests.swift */; };
+		9CD19D282AEC52EA001E0488 /* FetchMoviesUseCasetests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD19D272AEC52EA001E0488 /* FetchMoviesUseCasetests.swift */; };
 		B04435BA0E274EEF94E163F7 /* Pods_YassirApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0FFABE6EC76C008F8DE88E /* Pods_YassirApp.framework */; };
 		C2E8DE5F36D5E88C059EDD80 /* Pods_YassirApp_YassirAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992CF48C45520FB8E3A35F3F /* Pods_YassirApp_YassirAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -155,6 +157,8 @@
 		9CD19D182AEC35BC001E0488 /* MovieDetailsViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewControllerProtocol.swift; sourceTree = "<group>"; };
 		9CD19D1A2AEC35BC001E0488 /* MovieDetailsDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsDependencies.swift; sourceTree = "<group>"; };
 		9CD19D1B2AEC35BC001E0488 /* MovieDetailsCallBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsCallBack.swift; sourceTree = "<group>"; };
+		9CD19D252AEC412C001E0488 /* FetchMovieDetailsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMovieDetailsUseCaseTests.swift; sourceTree = "<group>"; };
+		9CD19D272AEC52EA001E0488 /* FetchMoviesUseCasetests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMoviesUseCasetests.swift; sourceTree = "<group>"; };
 		9E902B7E5AA52B1066280A9C /* Pods-YassirApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YassirApp.debug.xcconfig"; path = "Target Support Files/Pods-YassirApp/Pods-YassirApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A1AC6A3DBC7893022AC32625 /* Pods-YassirApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YassirApp.release.xcconfig"; path = "Target Support Files/Pods-YassirApp/Pods-YassirApp.release.xcconfig"; sourceTree = "<group>"; };
 		B9A90AB8A6F3B105787E3D42 /* Pods-YassirAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YassirAppTests.release.xcconfig"; path = "Target Support Files/Pods-YassirAppTests/Pods-YassirAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -332,6 +336,8 @@
 			isa = PBXGroup;
 			children = (
 				9CA5002F2AEADAA9001D8FD1 /* YassirAppTests.swift */,
+				9CD19D252AEC412C001E0488 /* FetchMovieDetailsUseCaseTests.swift */,
+				9CD19D272AEC52EA001E0488 /* FetchMoviesUseCasetests.swift */,
 			);
 			path = YassirAppTests;
 			sourceTree = "<group>";
@@ -940,7 +946,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD19D262AEC412C001E0488 /* FetchMovieDetailsUseCaseTests.swift in Sources */,
 				9CA500302AEADAA9001D8FD1 /* YassirAppTests.swift in Sources */,
+				9CD19D282AEC52EA001E0488 /* FetchMoviesUseCasetests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

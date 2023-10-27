@@ -6,7 +6,6 @@
 //  Copyright (c) 2023. All rights reserved.
 //
 
-import Alamofire
 import Combine
 
 class MoviesService: ServiceType, MoviesServiceProtocol {
