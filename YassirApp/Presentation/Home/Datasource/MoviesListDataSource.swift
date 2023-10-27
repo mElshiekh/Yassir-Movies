@@ -8,6 +8,7 @@
 import UIKit
 protocol MoviesListTableViewDatasourceDelegate: AnyObject {
     func didSelectItem(at index: Int)
+    func shouldLoadMore()
 }
 
 class MoviesListTableViewDatasource: NSObject {
@@ -58,5 +59,11 @@ extension MoviesListTableViewDatasource: UITableViewDataSource, UITableViewDeleg
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
         delegate?.didSelectItem(at: indexPath.row)
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == data.count - 1 {
+            delegate?.shouldLoadMore()
+        }
     }
 }

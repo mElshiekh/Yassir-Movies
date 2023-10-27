@@ -20,13 +20,15 @@ class BaseCoordinator: NSObject {
 
     func showMessageAlert(title: String,
                    message: String,
-                   action: Action) {
+                   action: Action?) {
         let alertController = UIAlertController(title: title,
                                                 message: message,
                                                 preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
-            action.action()
-        }))
+        if let action = action {
+            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+                action.action()
+            }))
+        }
         navigationController?.present(alertController, animated: true, completion: nil)
     }
 }

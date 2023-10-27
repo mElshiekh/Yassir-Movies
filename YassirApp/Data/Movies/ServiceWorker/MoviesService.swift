@@ -10,11 +10,10 @@ import Alamofire
 import Combine
 
 class MoviesService: ServiceType, MoviesServiceProtocol {
-    func MoviesRequest(object: MoviesRequestDTO) -> PassthroughSubject<MoviesResponseDTO?, NetworkError> {
+    func getMoviesRequest(object: MoviesRequestDTO) -> PassthroughSubject<MoviesResponseDTO?, NetworkError> {
         let endpoint = MoviesEndpoints.request
-        let url = getFullUrl(baseUrl: baseURL,
-                             endPoint: endpoint.rawValue,
-                             parameters: nil)
+        let url = getFullURL(endPoint: endpoint,
+                             parameters: object.toDictionary)
         return networkManager.processReq(url: url,
                                          method: endpoint.getMethod(),
                                          params: nil,

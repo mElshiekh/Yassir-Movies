@@ -8,11 +8,12 @@
 import Foundation
 
 struct Movie {
-    var id: String?
+    var id: Int?
     var poster: String?
     var title: String?
     var releaseDate: Date?
     var rating: Double?
+    var overview: String?
     
     var releaseYear: String {
         releaseDate?.getDateString(format: .year) ?? "N/A"

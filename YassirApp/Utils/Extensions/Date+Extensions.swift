@@ -10,11 +10,11 @@ import Foundation
 extension Date {
     enum DateFormates: String {
         case year = "yyyy"
-        case dateTimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        case dashedDateFormat = "yyyy-MM-dd"
     }
 
     init?(from date: String?,
-          fromFormate: String = DateFormates.dateTimeFormat.rawValue) {
+          fromFormate: String = DateFormates.dashedDateFormat.rawValue) {
         guard let date = date else { return nil }
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = fromFormate

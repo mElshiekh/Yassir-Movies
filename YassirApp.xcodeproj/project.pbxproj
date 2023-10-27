@@ -23,6 +23,8 @@
 		9C9D52A02AEBE21F0097FC02 /* MoviesListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9D529F2AEBE21F0097FC02 /* MoviesListDataSource.swift */; };
 		9C9D52A22AEBE4010097FC02 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9D52A12AEBE4010097FC02 /* UIImageView+Extensions.swift */; };
 		9C9D52A42AEBE6690097FC02 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9D52A32AEBE6690097FC02 /* Date+Extensions.swift */; };
+		9C9D52A72AEBF74B0097FC02 /* StaticDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9D52A62AEBF74B0097FC02 /* StaticDataManager.swift */; };
+		9C9D52AB2AEC003B0097FC02 /* Codable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9D52AA2AEC003B0097FC02 /* Codable+Extensions.swift */; };
 		9CA500162AEADAA7001D8FD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA500152AEADAA7001D8FD1 /* AppDelegate.swift */; };
 		9CA500202AEADAA7001D8FD1 /* YassirApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CA5001E2AEADAA7001D8FD1 /* YassirApp.xcdatamodeld */; };
 		9CA500222AEADAA9001D8FD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA500212AEADAA9001D8FD1 /* Assets.xcassets */; };
@@ -93,6 +95,8 @@
 		9C9D529F2AEBE21F0097FC02 /* MoviesListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListDataSource.swift; sourceTree = "<group>"; };
 		9C9D52A12AEBE4010097FC02 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		9C9D52A32AEBE6690097FC02 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		9C9D52A62AEBF74B0097FC02 /* StaticDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticDataManager.swift; sourceTree = "<group>"; };
+		9C9D52AA2AEC003B0097FC02 /* Codable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Extensions.swift"; sourceTree = "<group>"; };
 		9CA500122AEADAA7001D8FD1 /* YassirApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YassirApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA500152AEADAA7001D8FD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CA5001F2AEADAA7001D8FD1 /* YassirApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YassirApp.xcdatamodel; sourceTree = "<group>"; };
@@ -252,6 +256,14 @@
 			path = MovieTableViewCell;
 			sourceTree = "<group>";
 		};
+		9C9D52A52AEBF7190097FC02 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9C9D52A62AEBF74B0097FC02 /* StaticDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		9CA500092AEADAA7001D8FD1 = {
 			isa = PBXGroup;
 			children = (
@@ -328,6 +340,7 @@
 		9CA5004A2AEADB7E001D8FD1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9C9D52A52AEBF7190097FC02 /* Managers */,
 				9C9D52932AEBD8E80097FC02 /* Protocols */,
 				9CA500742AEAF023001D8FD1 /* Extensions */,
 				9CA5004E2AEADBCD001D8FD1 /* Network */,
@@ -437,6 +450,7 @@
 				9CA500752AEAF023001D8FD1 /* UIViewController+Extensions.swift */,
 				9C9D52A12AEBE4010097FC02 /* UIImageView+Extensions.swift */,
 				9C9D52A32AEBE6690097FC02 /* Date+Extensions.swift */,
+				9C9D52AA2AEC003B0097FC02 /* Codable+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -787,12 +801,14 @@
 				9CA500762AEAF023001D8FD1 /* UIViewController+Extensions.swift in Sources */,
 				9CAD31232AEB30CB00D764F1 /* MoviesServiceProtocol.swift in Sources */,
 				9C9D529C2AEBDDEF0097FC02 /* MovieTableViewCell.swift in Sources */,
+				9C9D52AB2AEC003B0097FC02 /* Codable+Extensions.swift in Sources */,
 				9C9D528F2AEBD8680097FC02 /* HomeViewController.swift in Sources */,
 				9CA500722AEAEFF9001D8FD1 /* BaseViewController.swift in Sources */,
 				9CA500542AEADD9C001D8FD1 /* AppCoordinatorProtocol.swift in Sources */,
 				9C9D528C2AEBD8680097FC02 /* HomeCoordinator.swift in Sources */,
 				9CA500202AEADAA7001D8FD1 /* YassirApp.xcdatamodeld in Sources */,
 				9C9D528A2AEBD8680097FC02 /* HomeViewModelProtocol.swift in Sources */,
+				9C9D52A72AEBF74B0097FC02 /* StaticDataManager.swift in Sources */,
 				9CAD30D42AEB029F00D764F1 /* ServiceType.swift in Sources */,
 				9C9D52A42AEBE6690097FC02 /* Date+Extensions.swift in Sources */,
 				9C9D52922AEBD8680097FC02 /* HomeCallBack.swift in Sources */,

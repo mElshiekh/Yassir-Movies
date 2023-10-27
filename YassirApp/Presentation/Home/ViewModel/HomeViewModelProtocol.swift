@@ -10,4 +10,9 @@ import Foundation
 import Combine
 
 protocol HomeViewModelProtocol: AnyObject {
+    var moviesObserver: CurrentValueSubject<[Movie]?, Never> { get set }
+    var loadingObserver: CurrentValueSubject<Bool, Never> { get set }
+    var networkErrorObserver: PassthroughSubject<String, Never> { get set }
+    func retrieveData()
+    func loadMore()
 }

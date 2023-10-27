@@ -19,7 +19,7 @@ enum MoviesEndpoints: String, Endpoints {
 
     func getValue() -> String {
         switch self {
-        case .request: return ""
+        case .request: return "discover/movie"
         }
     }
 }

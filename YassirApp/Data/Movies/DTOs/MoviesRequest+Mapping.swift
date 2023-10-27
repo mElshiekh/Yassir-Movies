@@ -9,4 +9,5 @@
 import Foundation
 
 struct MoviesRequestDTO: Codable {
+    var page: UInt
 }

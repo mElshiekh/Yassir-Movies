@@ -10,22 +10,23 @@ import Foundation
 class ServiceType {
     var networkManager = NetworkManager.shared
     var baseURL: String {
-        Bundle.main.object(forInfoDictionaryKey: "base_url") as? String ?? ""
-    }
-    var apiKey: String {
-        Bundle.main.object(forInfoDictionaryKey: "api_key") as? String ?? ""
+        StaticDataManager.shared.baseURL
     }
 
-    func getFullUrl(baseUrl: String,
+    var apiKey: String {
+        StaticDataManager.shared.apiKey
+    }
+
+    func getFullURL(baseUrl: String,
                     endPoint: String,
-                    parameters: [String: String]? = nil) -> String {
+                    parameters: [String: Any]? = nil) -> String {
         let urlString = "\(baseUrl)\(endPoint)"
         var components = URLComponents()
         components.path = urlString
         components.queryItems = []
         if let params = parameters {
-            for key in params.keys {
-                components.queryItems?.append(URLQueryItem(name: key, value: params[key]!))
+            for key in params.keys where params[key] != nil {
+                components.queryItems?.append(URLQueryItem(name: key, value: "\(params[key] ?? "")"))
             }
             return (components.url?.absoluteString.removingPercentEncoding?.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? urlString)
         }
@@ -35,10 +36,14 @@ class ServiceType {
 
 extension ServiceType {
     func getFullURL(endPoint: Endpoints,
-                    parameters: [String: String]? = nil) -> String {
+                    parameters: [String: Any]? = nil,
+                    includeAPIKey: Bool = true) -> String {
         var params = parameters
-        params?["api-key"] = apiKey
-        return getFullUrl(baseUrl: baseURL,
+        if includeAPIKey {
+            params = params ?? [:]
+            params?["api_key"] = apiKey
+        }
+        return getFullURL(baseUrl: baseURL,
                           endPoint: endPoint.getValue(),
                           parameters: params)
     }

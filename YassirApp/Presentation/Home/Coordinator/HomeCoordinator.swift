@@ -17,7 +17,7 @@ class HomeCoordinator: BaseCoordinator, HomeCoordinatorProtocol {
                callBack: PassthroughSubject<HomeCoordinatorCallback, Never>) -> UIViewController {
         self.callBack = callBack
         navigationController = model.navigationController
-        let viewModel = HomeViewModel()
+        let viewModel = HomeViewModel(service: MoviesService())
         let controller = HomeViewController.loadFromNib()
         self.controller = controller
         controller.coordinator = self

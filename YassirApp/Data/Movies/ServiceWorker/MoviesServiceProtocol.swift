@@ -9,5 +9,5 @@
 import Combine
 
 protocol MoviesServiceProtocol: ServiceType {
-    func MoviesRequest(object: MoviesRequestDTO) -> PassthroughSubject<MoviesResponseDTO?, NetworkError>
+    func getMoviesRequest(object: MoviesRequestDTO) -> PassthroughSubject<MoviesResponseDTO?, NetworkError>
 }
