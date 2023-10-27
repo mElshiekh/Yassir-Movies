@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7CAC5198E79E194AB7CFCEF7 /* Pods_YassirApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36B4EE22391527C6612875E /* Pods_YassirApp.framework */; };
+		965F2C1A3AABF8D50B4817C4 /* Pods_YassirAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE886711F6DCE3C799E9199 /* Pods_YassirAppTests.framework */; };
 		9CA500162AEADAA7001D8FD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA500152AEADAA7001D8FD1 /* AppDelegate.swift */; };
 		9CA500202AEADAA7001D8FD1 /* YassirApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CA5001E2AEADAA7001D8FD1 /* YassirApp.xcdatamodeld */; };
 		9CA500222AEADAA9001D8FD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA500212AEADAA9001D8FD1 /* Assets.xcassets */; };
@@ -19,8 +19,25 @@
 		9CA500542AEADD9C001D8FD1 /* AppCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA500532AEADD9C001D8FD1 /* AppCoordinatorProtocol.swift */; };
 		9CA500572AEADDE9001D8FD1 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA500562AEADDE9001D8FD1 /* BaseCoordinator.swift */; };
 		9CA5005D2AEADE74001D8FD1 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA5005C2AEADE74001D8FD1 /* Action.swift */; };
-		CF4FCE8672F7974254F22B60 /* Pods_YassirApp_YassirAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB45BC65CF3212B73C51E600 /* Pods_YassirApp_YassirAppUITests.framework */; };
-		D0DDE7143FFC4364F2CF7F1D /* Pods_YassirAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F0461B46CB1528D629C1E0 /* Pods_YassirAppTests.framework */; };
+		9CA5006B2AEAEFE9001D8FD1 /* WeakReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA5006A2AEAEFE9001D8FD1 /* WeakReference.swift */; };
+		9CA500722AEAEFF9001D8FD1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA5006F2AEAEFF9001D8FD1 /* BaseViewController.swift */; };
+		9CA500732AEAEFF9001D8FD1 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA500702AEAEFF9001D8FD1 /* Action.swift */; };
+		9CA500762AEAF023001D8FD1 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA500752AEAF023001D8FD1 /* UIViewController+Extensions.swift */; };
+		9CA500782AEAF037001D8FD1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA500772AEAF037001D8FD1 /* NetworkManager.swift */; };
+		9CA5007B2AEAF042001D8FD1 /* NetworkModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA5007A2AEAF042001D8FD1 /* NetworkModels.swift */; };
+		9CAD30D42AEB029F00D764F1 /* ServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD30D32AEB029F00D764F1 /* ServiceType.swift */; };
+		9CAD30D62AEB02C200D764F1 /* EndpointsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD30D52AEB02C200D764F1 /* EndpointsProtocol.swift */; };
+		9CAD31152AEB2EBF00D764F1 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD31142AEB2EBF00D764F1 /* Mapper.swift */; };
+		9CAD31202AEB30CB00D764F1 /* MoviesRequest+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD311A2AEB30CB00D764F1 /* MoviesRequest+Mapping.swift */; };
+		9CAD31212AEB30CB00D764F1 /* MoviesResponse+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD311B2AEB30CB00D764F1 /* MoviesResponse+Mapping.swift */; };
+		9CAD31222AEB30CB00D764F1 /* MoviesEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD311D2AEB30CB00D764F1 /* MoviesEndPoints.swift */; };
+		9CAD31232AEB30CB00D764F1 /* MoviesServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD311E2AEB30CB00D764F1 /* MoviesServiceProtocol.swift */; };
+		9CAD31242AEB30CB00D764F1 /* MoviesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD311F2AEB30CB00D764F1 /* MoviesService.swift */; };
+		9CAD31292AEB38A600D764F1 /* FetchMoviesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD31282AEB38A600D764F1 /* FetchMoviesUseCase.swift */; };
+		9CAD312B2AEB38DD00D764F1 /* FetchMoviesUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD312A2AEB38DD00D764F1 /* FetchMoviesUseCaseProtocol.swift */; };
+		9CAD312D2AEB39DE00D764F1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD312C2AEB39DE00D764F1 /* Movie.swift */; };
+		B04435BA0E274EEF94E163F7 /* Pods_YassirApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0FFABE6EC76C008F8DE88E /* Pods_YassirApp.framework */; };
+		C2E8DE5F36D5E88C059EDD80 /* Pods_YassirApp_YassirAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992CF48C45520FB8E3A35F3F /* Pods_YassirApp_YassirAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +58,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4D7DA04651B4D87D01D9943B /* Pods-YassirApp-YassirAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YassirApp-YassirAppUITests.release.xcconfig"; path = "Target Support Files/Pods-YassirApp-YassirAppUITests/Pods-YassirApp-YassirAppUITests.release.xcconfig"; sourceTree = "<group>"; };
-		4E9A2AFC973606D71FA6300F /* Pods-YassirApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YassirApp.debug.xcconfig"; path = "Target Support Files/Pods-YassirApp/Pods-YassirApp.debug.xcconfig"; sourceTree = "<group>"; };
-		6201907E39199870C65AA028 /* Pods-YassirAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YassirAppTests.release.xcconfig"; path = "Target Support Files/Pods-YassirAppTests/Pods-YassirAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		2EE886711F6DCE3C799E9199 /* Pods_YassirAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YassirAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F0FFABE6EC76C008F8DE88E /* Pods_YassirApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YassirApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78941BD1A04A35590E37A0D5 /* Pods-YassirApp-YassirAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YassirApp-YassirAppUITests.release.xcconfig"; path = "Target Support Files/Pods-YassirApp-YassirAppUITests/Pods-YassirApp-YassirAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		889B5B9E74162216ED6CA986 /* Pods-YassirAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YassirAppTests.debug.xcconfig"; path = "Target Support Files/Pods-YassirAppTests/Pods-YassirAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		992CF48C45520FB8E3A35F3F /* Pods_YassirApp_YassirAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YassirApp_YassirAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA500122AEADAA7001D8FD1 /* YassirApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YassirApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA500152AEADAA7001D8FD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CA5001F2AEADAA7001D8FD1 /* YassirApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YassirApp.xcdatamodel; sourceTree = "<group>"; };
@@ -59,12 +78,27 @@
 		9CA500532AEADD9C001D8FD1 /* AppCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorProtocol.swift; sourceTree = "<group>"; };
 		9CA500562AEADDE9001D8FD1 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		9CA5005C2AEADE74001D8FD1 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
-		A09F6FE242E9DEFE9568F7E5 /* Pods-YassirAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YassirAppTests.debug.xcconfig"; path = "Target Support Files/Pods-YassirAppTests/Pods-YassirAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		AB45BC65CF3212B73C51E600 /* Pods_YassirApp_YassirAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YassirApp_YassirAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B21EE8AD5A030DC9B12A4568 /* Pods-YassirApp-YassirAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YassirApp-YassirAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-YassirApp-YassirAppUITests/Pods-YassirApp-YassirAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		B6F0461B46CB1528D629C1E0 /* Pods_YassirAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YassirAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C36B4EE22391527C6612875E /* Pods_YassirApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YassirApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4AD8678860B3269F5E17552 /* Pods-YassirApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YassirApp.release.xcconfig"; path = "Target Support Files/Pods-YassirApp/Pods-YassirApp.release.xcconfig"; sourceTree = "<group>"; };
+		9CA5006A2AEAEFE9001D8FD1 /* WeakReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakReference.swift; sourceTree = "<group>"; };
+		9CA5006F2AEAEFF9001D8FD1 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9CA500702AEAEFF9001D8FD1 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		9CA500752AEAF023001D8FD1 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		9CA500772AEAF037001D8FD1 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9CA5007A2AEAF042001D8FD1 /* NetworkModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkModels.swift; sourceTree = "<group>"; };
+		9CAD30D32AEB029F00D764F1 /* ServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceType.swift; sourceTree = "<group>"; };
+		9CAD30D52AEB02C200D764F1 /* EndpointsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointsProtocol.swift; sourceTree = "<group>"; };
+		9CAD31142AEB2EBF00D764F1 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		9CAD311A2AEB30CB00D764F1 /* MoviesRequest+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoviesRequest+Mapping.swift"; sourceTree = "<group>"; };
+		9CAD311B2AEB30CB00D764F1 /* MoviesResponse+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoviesResponse+Mapping.swift"; sourceTree = "<group>"; };
+		9CAD311D2AEB30CB00D764F1 /* MoviesEndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesEndPoints.swift; sourceTree = "<group>"; };
+		9CAD311E2AEB30CB00D764F1 /* MoviesServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesServiceProtocol.swift; sourceTree = "<group>"; };
+		9CAD311F2AEB30CB00D764F1 /* MoviesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesService.swift; sourceTree = "<group>"; };
+		9CAD31282AEB38A600D764F1 /* FetchMoviesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMoviesUseCase.swift; sourceTree = "<group>"; };
+		9CAD312A2AEB38DD00D764F1 /* FetchMoviesUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMoviesUseCaseProtocol.swift; sourceTree = "<group>"; };
+		9CAD312C2AEB39DE00D764F1 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		9E902B7E5AA52B1066280A9C /* Pods-YassirApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YassirApp.debug.xcconfig"; path = "Target Support Files/Pods-YassirApp/Pods-YassirApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A1AC6A3DBC7893022AC32625 /* Pods-YassirApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YassirApp.release.xcconfig"; path = "Target Support Files/Pods-YassirApp/Pods-YassirApp.release.xcconfig"; sourceTree = "<group>"; };
+		B9A90AB8A6F3B105787E3D42 /* Pods-YassirAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YassirAppTests.release.xcconfig"; path = "Target Support Files/Pods-YassirAppTests/Pods-YassirAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		EA12C7CBDB31E4650C440C6D /* Pods-YassirApp-YassirAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YassirApp-YassirAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-YassirApp-YassirAppUITests/Pods-YassirApp-YassirAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CAC5198E79E194AB7CFCEF7 /* Pods_YassirApp.framework in Frameworks */,
+				B04435BA0E274EEF94E163F7 /* Pods_YassirApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0DDE7143FFC4364F2CF7F1D /* Pods_YassirAppTests.framework in Frameworks */,
+				965F2C1A3AABF8D50B4817C4 /* Pods_YassirAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,19 +122,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF4FCE8672F7974254F22B60 /* Pods_YassirApp_YassirAppUITests.framework in Frameworks */,
+				C2E8DE5F36D5E88C059EDD80 /* Pods_YassirApp_YassirAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		44650397EB30826ECE50F3C3 /* Frameworks */ = {
+		7144FCFE9B64D1FC36568E78 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C36B4EE22391527C6612875E /* Pods_YassirApp.framework */,
-				AB45BC65CF3212B73C51E600 /* Pods_YassirApp_YassirAppUITests.framework */,
-				B6F0461B46CB1528D629C1E0 /* Pods_YassirAppTests.framework */,
+				5F0FFABE6EC76C008F8DE88E /* Pods_YassirApp.framework */,
+				992CF48C45520FB8E3A35F3F /* Pods_YassirApp_YassirAppUITests.framework */,
+				2EE886711F6DCE3C799E9199 /* Pods_YassirAppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -113,7 +147,7 @@
 				9CA500382AEADAA9001D8FD1 /* YassirAppUITests */,
 				9CA500132AEADAA7001D8FD1 /* Products */,
 				C07395A1D5C083FF14861106 /* Pods */,
-				44650397EB30826ECE50F3C3 /* Frameworks */,
+				7144FCFE9B64D1FC36568E78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,7 +170,6 @@
 				9CA5004A2AEADB7E001D8FD1 /* Utils */,
 				9CA500492AEADB5A001D8FD1 /* Application */,
 				9CA500482AEADB42001D8FD1 /* Resources */,
-				9CA500212AEADAA9001D8FD1 /* Assets.xcassets */,
 				9CA500232AEADAA9001D8FD1 /* LaunchScreen.storyboard */,
 				9CA500262AEADAA9001D8FD1 /* Info.plist */,
 				9CA5001E2AEADAA7001D8FD1 /* YassirApp.xcdatamodeld */,
@@ -164,6 +197,7 @@
 		9CA500482AEADB42001D8FD1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9CA500212AEADAA9001D8FD1 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -181,6 +215,7 @@
 		9CA5004A2AEADB7E001D8FD1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9CA500742AEAF023001D8FD1 /* Extensions */,
 				9CA5004E2AEADBCD001D8FD1 /* Network */,
 				9CA5005A2AEADE4F001D8FD1 /* Common */,
 			);
@@ -190,6 +225,7 @@
 		9CA5004B2AEADB91001D8FD1 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				9CAD31252AEB387B00D764F1 /* FetchMovies */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -197,6 +233,7 @@
 		9CA5004C2AEADB99001D8FD1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				9CAD31182AEB30CB00D764F1 /* Movies */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -211,6 +248,8 @@
 		9CA5004E2AEADBCD001D8FD1 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				9CAD30D22AEB028000D764F1 /* Services */,
+				9CA500772AEAF037001D8FD1 /* NetworkManager.swift */,
 				9CA5004F2AEADBD8001D8FD1 /* Models */,
 			);
 			path = Network;
@@ -219,6 +258,7 @@
 		9CA5004F2AEADBD8001D8FD1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9CA500792AEAF042001D8FD1 /* Models */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -244,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				9CA5005B2AEADE62001D8FD1 /* Models */,
+				9CAD31142AEB2EBF00D764F1 /* Mapper.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -251,22 +292,119 @@
 		9CA5005B2AEADE62001D8FD1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9CA5006C2AEAEFF9001D8FD1 /* Models */,
+				9CA5006A2AEAEFE9001D8FD1 /* WeakReference.swift */,
 				9CA5005C2AEADE74001D8FD1 /* Action.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
+		9CA5006C2AEAEFF9001D8FD1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9CA5006E2AEAEFF9001D8FD1 /* BaseModels */,
+				9CA500702AEAEFF9001D8FD1 /* Action.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9CA5006E2AEAEFF9001D8FD1 /* BaseModels */ = {
+			isa = PBXGroup;
+			children = (
+				9CA5006F2AEAEFF9001D8FD1 /* BaseViewController.swift */,
+			);
+			path = BaseModels;
+			sourceTree = "<group>";
+		};
+		9CA500742AEAF023001D8FD1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9CA500752AEAF023001D8FD1 /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9CA500792AEAF042001D8FD1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9CA5007A2AEAF042001D8FD1 /* NetworkModels.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9CAD30D22AEB028000D764F1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9CAD30D32AEB029F00D764F1 /* ServiceType.swift */,
+				9CAD30D52AEB02C200D764F1 /* EndpointsProtocol.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9CAD31182AEB30CB00D764F1 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				9CAD31192AEB30CB00D764F1 /* DTOs */,
+				9CAD311C2AEB30CB00D764F1 /* ServiceWorker */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		9CAD31192AEB30CB00D764F1 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				9CAD311A2AEB30CB00D764F1 /* MoviesRequest+Mapping.swift */,
+				9CAD311B2AEB30CB00D764F1 /* MoviesResponse+Mapping.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		9CAD311C2AEB30CB00D764F1 /* ServiceWorker */ = {
+			isa = PBXGroup;
+			children = (
+				9CAD311D2AEB30CB00D764F1 /* MoviesEndPoints.swift */,
+				9CAD311E2AEB30CB00D764F1 /* MoviesServiceProtocol.swift */,
+				9CAD311F2AEB30CB00D764F1 /* MoviesService.swift */,
+			);
+			path = ServiceWorker;
+			sourceTree = "<group>";
+		};
+		9CAD31252AEB387B00D764F1 /* FetchMovies */ = {
+			isa = PBXGroup;
+			children = (
+				9CAD31272AEB388E00D764F1 /* UseCase */,
+				9CAD31262AEB388700D764F1 /* Entities */,
+			);
+			path = FetchMovies;
+			sourceTree = "<group>";
+		};
+		9CAD31262AEB388700D764F1 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9CAD312C2AEB39DE00D764F1 /* Movie.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		9CAD31272AEB388E00D764F1 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				9CAD31282AEB38A600D764F1 /* FetchMoviesUseCase.swift */,
+				9CAD312A2AEB38DD00D764F1 /* FetchMoviesUseCaseProtocol.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
 		C07395A1D5C083FF14861106 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4E9A2AFC973606D71FA6300F /* Pods-YassirApp.debug.xcconfig */,
-				F4AD8678860B3269F5E17552 /* Pods-YassirApp.release.xcconfig */,
-				B21EE8AD5A030DC9B12A4568 /* Pods-YassirApp-YassirAppUITests.debug.xcconfig */,
-				4D7DA04651B4D87D01D9943B /* Pods-YassirApp-YassirAppUITests.release.xcconfig */,
-				A09F6FE242E9DEFE9568F7E5 /* Pods-YassirAppTests.debug.xcconfig */,
-				6201907E39199870C65AA028 /* Pods-YassirAppTests.release.xcconfig */,
+				9E902B7E5AA52B1066280A9C /* Pods-YassirApp.debug.xcconfig */,
+				A1AC6A3DBC7893022AC32625 /* Pods-YassirApp.release.xcconfig */,
+				EA12C7CBDB31E4650C440C6D /* Pods-YassirApp-YassirAppUITests.debug.xcconfig */,
+				78941BD1A04A35590E37A0D5 /* Pods-YassirApp-YassirAppUITests.release.xcconfig */,
+				889B5B9E74162216ED6CA986 /* Pods-YassirAppTests.debug.xcconfig */,
+				B9A90AB8A6F3B105787E3D42 /* Pods-YassirAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -277,10 +415,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CA5003F2AEADAA9001D8FD1 /* Build configuration list for PBXNativeTarget "YassirApp" */;
 			buildPhases = (
-				2D91B6FA3F186EF09EF6D3E7 /* [CP] Check Pods Manifest.lock */,
+				E490CD406A334E2A6A3D1065 /* [CP] Check Pods Manifest.lock */,
 				9CA5000E2AEADAA7001D8FD1 /* Sources */,
 				9CA5000F2AEADAA7001D8FD1 /* Frameworks */,
 				9CA500102AEADAA7001D8FD1 /* Resources */,
+				7C873ECA0AFBE6702E9B3415 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,7 +434,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CA500422AEADAA9001D8FD1 /* Build configuration list for PBXNativeTarget "YassirAppTests" */;
 			buildPhases = (
-				FEF55740962E80C5C2162D50 /* [CP] Check Pods Manifest.lock */,
+				EEE17928911B1A5030250B64 /* [CP] Check Pods Manifest.lock */,
 				9CA500272AEADAA9001D8FD1 /* Sources */,
 				9CA500282AEADAA9001D8FD1 /* Frameworks */,
 				9CA500292AEADAA9001D8FD1 /* Resources */,
@@ -314,10 +453,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CA500452AEADAA9001D8FD1 /* Build configuration list for PBXNativeTarget "YassirAppUITests" */;
 			buildPhases = (
-				9B32911D2A7651470174C7D0 /* [CP] Check Pods Manifest.lock */,
+				7ADDB6BA95BB887DE0262F70 /* [CP] Check Pods Manifest.lock */,
 				9CA500312AEADAA9001D8FD1 /* Sources */,
 				9CA500322AEADAA9001D8FD1 /* Frameworks */,
 				9CA500332AEADAA9001D8FD1 /* Resources */,
+				32E1D5560061E408A7675DCA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -399,29 +539,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2D91B6FA3F186EF09EF6D3E7 /* [CP] Check Pods Manifest.lock */ = {
+		32E1D5560061E408A7675DCA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YassirApp-YassirAppUITests/Pods-YassirApp-YassirAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-YassirApp-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-YassirApp-YassirAppUITests/Pods-YassirApp-YassirAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YassirApp-YassirAppUITests/Pods-YassirApp-YassirAppUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9B32911D2A7651470174C7D0 /* [CP] Check Pods Manifest.lock */ = {
+		7ADDB6BA95BB887DE0262F70 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -443,7 +578,46 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FEF55740962E80C5C2162D50 /* [CP] Check Pods Manifest.lock */ = {
+		7C873ECA0AFBE6702E9B3415 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YassirApp/Pods-YassirApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YassirApp/Pods-YassirApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YassirApp/Pods-YassirApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E490CD406A334E2A6A3D1065 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YassirApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEE17928911B1A5030250B64 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -472,12 +646,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CAD30D62AEB02C200D764F1 /* EndpointsProtocol.swift in Sources */,
+				9CA500782AEAF037001D8FD1 /* NetworkManager.swift in Sources */,
+				9CA5007B2AEAF042001D8FD1 /* NetworkModels.swift in Sources */,
+				9CAD312D2AEB39DE00D764F1 /* Movie.swift in Sources */,
+				9CAD31152AEB2EBF00D764F1 /* Mapper.swift in Sources */,
 				9CA500572AEADDE9001D8FD1 /* BaseCoordinator.swift in Sources */,
+				9CAD31212AEB30CB00D764F1 /* MoviesResponse+Mapping.swift in Sources */,
+				9CAD31292AEB38A600D764F1 /* FetchMoviesUseCase.swift in Sources */,
+				9CAD31242AEB30CB00D764F1 /* MoviesService.swift in Sources */,
+				9CAD312B2AEB38DD00D764F1 /* FetchMoviesUseCaseProtocol.swift in Sources */,
 				9CA5005D2AEADE74001D8FD1 /* Action.swift in Sources */,
+				9CA5006B2AEAEFE9001D8FD1 /* WeakReference.swift in Sources */,
+				9CA500732AEAEFF9001D8FD1 /* Action.swift in Sources */,
 				9CA500512AEADD16001D8FD1 /* AppCoordinator.swift in Sources */,
+				9CAD31202AEB30CB00D764F1 /* MoviesRequest+Mapping.swift in Sources */,
 				9CA500162AEADAA7001D8FD1 /* AppDelegate.swift in Sources */,
+				9CA500762AEAF023001D8FD1 /* UIViewController+Extensions.swift in Sources */,
+				9CAD31232AEB30CB00D764F1 /* MoviesServiceProtocol.swift in Sources */,
+				9CA500722AEAEFF9001D8FD1 /* BaseViewController.swift in Sources */,
 				9CA500542AEADD9C001D8FD1 /* AppCoordinatorProtocol.swift in Sources */,
 				9CA500202AEADAA7001D8FD1 /* YassirApp.xcdatamodeld in Sources */,
+				9CAD30D42AEB029F00D764F1 /* ServiceType.swift in Sources */,
+				9CAD31222AEB30CB00D764F1 /* MoviesEndPoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,12 +832,13 @@
 		};
 		9CA500402AEADAA9001D8FD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E9A2AFC973606D71FA6300F /* Pods-YassirApp.debug.xcconfig */;
+			baseConfigurationReference = 9E902B7E5AA52B1066280A9C /* Pods-YassirApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YYF88N59UA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YassirApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -654,11 +846,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shiekh.YassirApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -669,12 +863,13 @@
 		};
 		9CA500412AEADAA9001D8FD1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4AD8678860B3269F5E17552 /* Pods-YassirApp.release.xcconfig */;
+			baseConfigurationReference = A1AC6A3DBC7893022AC32625 /* Pods-YassirApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YYF88N59UA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YassirApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -682,6 +877,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -697,7 +893,7 @@
 		};
 		9CA500432AEADAA9001D8FD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A09F6FE242E9DEFE9568F7E5 /* Pods-YassirAppTests.debug.xcconfig */;
+			baseConfigurationReference = 889B5B9E74162216ED6CA986 /* Pods-YassirAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -717,7 +913,7 @@
 		};
 		9CA500442AEADAA9001D8FD1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6201907E39199870C65AA028 /* Pods-YassirAppTests.release.xcconfig */;
+			baseConfigurationReference = B9A90AB8A6F3B105787E3D42 /* Pods-YassirAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -737,7 +933,7 @@
 		};
 		9CA500462AEADAA9001D8FD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B21EE8AD5A030DC9B12A4568 /* Pods-YassirApp-YassirAppUITests.debug.xcconfig */;
+			baseConfigurationReference = EA12C7CBDB31E4650C440C6D /* Pods-YassirApp-YassirAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -755,7 +951,7 @@
 		};
 		9CA500472AEADAA9001D8FD1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D7DA04651B4D87D01D9943B /* Pods-YassirApp-YassirAppUITests.release.xcconfig */;
+			baseConfigurationReference = 78941BD1A04A35590E37A0D5 /* Pods-YassirApp-YassirAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
