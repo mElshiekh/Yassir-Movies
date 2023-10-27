@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+struct Movie {
+    var id: String?
+    var poster: String?
+    var title: String?
+    var releaseDate: Date?
+    var rating: Double?
+    
+    var releaseYear: String {
+        releaseDate?.getDateString(format: .year) ?? "N/A"
+    }
+}

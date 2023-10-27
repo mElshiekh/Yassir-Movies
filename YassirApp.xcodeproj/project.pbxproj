@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		965F2C1A3AABF8D50B4817C4 /* Pods_YassirAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE886711F6DCE3C799E9199 /* Pods_YassirAppTests.framework */; };
+		9C9D528A2AEBD8680097FC02 /* HomeViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9D527E2AEBD8680097FC02 /* HomeViewModelProtocol.swift */; };
+		9C9D528B2AEBD8680097FC02 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9D527F2AEBD8680097FC02 /* HomeViewModel.swift */; };
+		9C9D528C2AEBD8680097FC02 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9D52812AEBD8680097FC02 /* HomeCoordinator.swift */; };
+		9C9D528D2AEBD8680097FC02 /* HomeCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9D52822AEBD8680097FC02 /* HomeCoordinatorProtocol.swift */; };
+		9C9D528E2AEBD8680097FC02 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C9D52842AEBD8680097FC02 /* HomeViewController.xib */; };
+		9C9D528F2AEBD8680097FC02 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9D52852AEBD8680097FC02 /* HomeViewController.swift */; };
+		9C9D52902AEBD8680097FC02 /* HomeViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9D52862AEBD8680097FC02 /* HomeViewControllerProtocol.swift */; };
+		9C9D52912AEBD8680097FC02 /* HomeDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9D52882AEBD8680097FC02 /* HomeDependencies.swift */; };
+		9C9D52922AEBD8680097FC02 /* HomeCallBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9D52892AEBD8680097FC02 /* HomeCallBack.swift */; };
+		9C9D52952AEBD9050097FC02 /* CoordinatorDependencyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9D52942AEBD9050097FC02 /* CoordinatorDependencyType.swift */; };
+		9C9D529C2AEBDDEF0097FC02 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9D529A2AEBDDEF0097FC02 /* MovieTableViewCell.swift */; };
+		9C9D529D2AEBDDEF0097FC02 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C9D529B2AEBDDEF0097FC02 /* MovieTableViewCell.xib */; };
+		9C9D52A02AEBE21F0097FC02 /* MoviesListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9D529F2AEBE21F0097FC02 /* MoviesListDataSource.swift */; };
+		9C9D52A22AEBE4010097FC02 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9D52A12AEBE4010097FC02 /* UIImageView+Extensions.swift */; };
+		9C9D52A42AEBE6690097FC02 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9D52A32AEBE6690097FC02 /* Date+Extensions.swift */; };
 		9CA500162AEADAA7001D8FD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA500152AEADAA7001D8FD1 /* AppDelegate.swift */; };
 		9CA500202AEADAA7001D8FD1 /* YassirApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CA5001E2AEADAA7001D8FD1 /* YassirApp.xcdatamodeld */; };
 		9CA500222AEADAA9001D8FD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA500212AEADAA9001D8FD1 /* Assets.xcassets */; };
@@ -63,6 +78,21 @@
 		78941BD1A04A35590E37A0D5 /* Pods-YassirApp-YassirAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YassirApp-YassirAppUITests.release.xcconfig"; path = "Target Support Files/Pods-YassirApp-YassirAppUITests/Pods-YassirApp-YassirAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		889B5B9E74162216ED6CA986 /* Pods-YassirAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YassirAppTests.debug.xcconfig"; path = "Target Support Files/Pods-YassirAppTests/Pods-YassirAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		992CF48C45520FB8E3A35F3F /* Pods_YassirApp_YassirAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YassirApp_YassirAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C9D527E2AEBD8680097FC02 /* HomeViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModelProtocol.swift; sourceTree = "<group>"; };
+		9C9D527F2AEBD8680097FC02 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		9C9D52812AEBD8680097FC02 /* HomeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		9C9D52822AEBD8680097FC02 /* HomeCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		9C9D52842AEBD8680097FC02 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		9C9D52852AEBD8680097FC02 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9C9D52862AEBD8680097FC02 /* HomeViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewControllerProtocol.swift; sourceTree = "<group>"; };
+		9C9D52882AEBD8680097FC02 /* HomeDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDependencies.swift; sourceTree = "<group>"; };
+		9C9D52892AEBD8680097FC02 /* HomeCallBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCallBack.swift; sourceTree = "<group>"; };
+		9C9D52942AEBD9050097FC02 /* CoordinatorDependencyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorDependencyType.swift; sourceTree = "<group>"; };
+		9C9D529A2AEBDDEF0097FC02 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		9C9D529B2AEBDDEF0097FC02 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
+		9C9D529F2AEBE21F0097FC02 /* MoviesListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListDataSource.swift; sourceTree = "<group>"; };
+		9C9D52A12AEBE4010097FC02 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		9C9D52A32AEBE6690097FC02 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		9CA500122AEADAA7001D8FD1 /* YassirApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YassirApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA500152AEADAA7001D8FD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CA5001F2AEADAA7001D8FD1 /* YassirApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YassirApp.xcdatamodel; sourceTree = "<group>"; };
@@ -137,6 +167,89 @@
 				2EE886711F6DCE3C799E9199 /* Pods_YassirAppTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C9D527C2AEBD8680097FC02 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9C9D52972AEBDB280097FC02 /* ReusableViews */,
+				9C9D52962AEBDAFA0097FC02 /* Datasource */,
+				9C9D527D2AEBD8680097FC02 /* ViewModel */,
+				9C9D52802AEBD8680097FC02 /* Coordinator */,
+				9C9D52832AEBD8680097FC02 /* Controller */,
+				9C9D52872AEBD8680097FC02 /* Resourses */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9C9D527D2AEBD8680097FC02 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9C9D527E2AEBD8680097FC02 /* HomeViewModelProtocol.swift */,
+				9C9D527F2AEBD8680097FC02 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9C9D52802AEBD8680097FC02 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9C9D52812AEBD8680097FC02 /* HomeCoordinator.swift */,
+				9C9D52822AEBD8680097FC02 /* HomeCoordinatorProtocol.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9C9D52832AEBD8680097FC02 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9C9D52842AEBD8680097FC02 /* HomeViewController.xib */,
+				9C9D52852AEBD8680097FC02 /* HomeViewController.swift */,
+				9C9D52862AEBD8680097FC02 /* HomeViewControllerProtocol.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9C9D52872AEBD8680097FC02 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				9C9D52882AEBD8680097FC02 /* HomeDependencies.swift */,
+				9C9D52892AEBD8680097FC02 /* HomeCallBack.swift */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		9C9D52932AEBD8E80097FC02 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9C9D52942AEBD9050097FC02 /* CoordinatorDependencyType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9C9D52962AEBDAFA0097FC02 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				9C9D529F2AEBE21F0097FC02 /* MoviesListDataSource.swift */,
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
+		9C9D52972AEBDB280097FC02 /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				9C9D529E2AEBE1BB0097FC02 /* MovieTableViewCell */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		9C9D529E2AEBE1BB0097FC02 /* MovieTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9C9D529A2AEBDDEF0097FC02 /* MovieTableViewCell.swift */,
+				9C9D529B2AEBDDEF0097FC02 /* MovieTableViewCell.xib */,
+			);
+			path = MovieTableViewCell;
 			sourceTree = "<group>";
 		};
 		9CA500092AEADAA7001D8FD1 = {
@@ -215,6 +328,7 @@
 		9CA5004A2AEADB7E001D8FD1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9C9D52932AEBD8E80097FC02 /* Protocols */,
 				9CA500742AEAF023001D8FD1 /* Extensions */,
 				9CA5004E2AEADBCD001D8FD1 /* Network */,
 				9CA5005A2AEADE4F001D8FD1 /* Common */,
@@ -241,6 +355,7 @@
 		9CA5004D2AEADBA2001D8FD1 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				9C9D527C2AEBD8680097FC02 /* Home */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -320,6 +435,8 @@
 			isa = PBXGroup;
 			children = (
 				9CA500752AEAF023001D8FD1 /* UIViewController+Extensions.swift */,
+				9C9D52A12AEBE4010097FC02 /* UIImageView+Extensions.swift */,
+				9C9D52A32AEBE6690097FC02 /* Date+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -519,6 +636,8 @@
 			files = (
 				9CA500252AEADAA9001D8FD1 /* LaunchScreen.storyboard in Resources */,
 				9CA500222AEADAA9001D8FD1 /* Assets.xcassets in Resources */,
+				9C9D529D2AEBDDEF0097FC02 /* MovieTableViewCell.xib in Resources */,
+				9C9D528E2AEBD8680097FC02 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,8 +768,10 @@
 				9CAD30D62AEB02C200D764F1 /* EndpointsProtocol.swift in Sources */,
 				9CA500782AEAF037001D8FD1 /* NetworkManager.swift in Sources */,
 				9CA5007B2AEAF042001D8FD1 /* NetworkModels.swift in Sources */,
+				9C9D528B2AEBD8680097FC02 /* HomeViewModel.swift in Sources */,
 				9CAD312D2AEB39DE00D764F1 /* Movie.swift in Sources */,
 				9CAD31152AEB2EBF00D764F1 /* Mapper.swift in Sources */,
+				9C9D52902AEBD8680097FC02 /* HomeViewControllerProtocol.swift in Sources */,
 				9CA500572AEADDE9001D8FD1 /* BaseCoordinator.swift in Sources */,
 				9CAD31212AEB30CB00D764F1 /* MoviesResponse+Mapping.swift in Sources */,
 				9CAD31292AEB38A600D764F1 /* FetchMoviesUseCase.swift in Sources */,
@@ -659,16 +780,27 @@
 				9CA5005D2AEADE74001D8FD1 /* Action.swift in Sources */,
 				9CA5006B2AEAEFE9001D8FD1 /* WeakReference.swift in Sources */,
 				9CA500732AEAEFF9001D8FD1 /* Action.swift in Sources */,
+				9C9D52A22AEBE4010097FC02 /* UIImageView+Extensions.swift in Sources */,
 				9CA500512AEADD16001D8FD1 /* AppCoordinator.swift in Sources */,
 				9CAD31202AEB30CB00D764F1 /* MoviesRequest+Mapping.swift in Sources */,
 				9CA500162AEADAA7001D8FD1 /* AppDelegate.swift in Sources */,
 				9CA500762AEAF023001D8FD1 /* UIViewController+Extensions.swift in Sources */,
 				9CAD31232AEB30CB00D764F1 /* MoviesServiceProtocol.swift in Sources */,
+				9C9D529C2AEBDDEF0097FC02 /* MovieTableViewCell.swift in Sources */,
+				9C9D528F2AEBD8680097FC02 /* HomeViewController.swift in Sources */,
 				9CA500722AEAEFF9001D8FD1 /* BaseViewController.swift in Sources */,
 				9CA500542AEADD9C001D8FD1 /* AppCoordinatorProtocol.swift in Sources */,
+				9C9D528C2AEBD8680097FC02 /* HomeCoordinator.swift in Sources */,
 				9CA500202AEADAA7001D8FD1 /* YassirApp.xcdatamodeld in Sources */,
+				9C9D528A2AEBD8680097FC02 /* HomeViewModelProtocol.swift in Sources */,
 				9CAD30D42AEB029F00D764F1 /* ServiceType.swift in Sources */,
+				9C9D52A42AEBE6690097FC02 /* Date+Extensions.swift in Sources */,
+				9C9D52922AEBD8680097FC02 /* HomeCallBack.swift in Sources */,
 				9CAD31222AEB30CB00D764F1 /* MoviesEndPoints.swift in Sources */,
+				9C9D528D2AEBD8680097FC02 /* HomeCoordinatorProtocol.swift in Sources */,
+				9C9D52912AEBD8680097FC02 /* HomeDependencies.swift in Sources */,
+				9C9D52952AEBD9050097FC02 /* CoordinatorDependencyType.swift in Sources */,
+				9C9D52A02AEBE21F0097FC02 /* MoviesListDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -843,9 +975,8 @@
 				INFOPLIST_FILE = YassirApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -874,9 +1005,8 @@
 				INFOPLIST_FILE = YassirApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

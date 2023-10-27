@@ -19,5 +19,14 @@ class AppCoordinator: AppCoordinatorProtocol {
     }
 
     func start() {
+        let navigationController = UINavigationController()
+        let coordinator = HomeCoordinator()
+        let callBack = PassthroughSubject<HomeCoordinatorCallback, Never>()
+        let controller = coordinator.start(model: HomeDependencies(navigationController: navigationController),
+                                           callBack: callBack)
+        navigationController.viewControllers = [controller]
+        window = UIWindow()
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
     }
 }
